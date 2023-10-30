@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(imgs/conrracinzasvg.svg) no-repeat top center/cover;
+}
+/* falta por a fonte */
+
+body * {
+  color: white;
+
+  
+}
+
+.container {
+  width: 380px;
+  
+
+  margin: 56px auto 0;
+  padding: 0 24px;
+
+}
+
+.profile {
+  
+  text-align: center;
+  padding: 24px;
+  margin: 0;
+
+  font-family: "a•space", sans-serif;
+  font-family: "a•space Light", sans-serif;
+  font-family: "a•space light", sans-serif;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 112px;
+  border: solid 2px rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+
+  transition: 2s;
+}
+.profile img:hover {
+  border: solid 2px rgb(255, 255, 255);
+}
+
+.profile a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+
+.loginPage{
+
+ display: flex;
+flex-direction: column;
+width: 320px;
+margin: auto;
+
+padding: 20%;
+
+
+font-family: 'Grabstein Sans CE', sans-serif;
+border-radius: 14% 0% 12% 10% / 10% 4% 10% 0%  ;
+background-color: rgba(0, 0, 0, 0.39);
+-webkit-backdrop-filter:blur(4px) ;
+backdrop-filter: blur(1px);
+                                                
+
+}
+
+form h2{
+  text-align: center;
+  padding:0 ;
+  margin: 0;
+  font-weight: 500;
+  
+  margin-bottom: 20px;
+
+}
+
+.loginPage label{
+  display: flex;
+   font-size: 2.3em;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 4px;
+ 
+ 
+}
+.loginPage input {
+  height: 40px;
+  background: none;
+  color: white;
+
+ text-align: center;
+  border: none;
+  border-bottom: 1px solid rgb(31, 1, 48);
+  background: blur(40%);
+  
+
+}
+
+::placeholder{
+  text-align: left;
+  font-size: 13px;
+  color: whitesmoke;
+}
+
+.loginPage .button {
+
+
+color: rgb(255, 255, 255);
+
+background-color: rgba(31, 1, 48, 0.26);
+
+border-radius: 4px;
+padding: 10px 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15px;
+}
+/* LINKS */
+
