@@ -1,214 +1,172 @@
-*{
-    padding: 0;
-    margin: 0;
-
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
+body {
   background-color: #ad1212;
   color: white;
 }
 
-h2{
-   position: absolute;
-align-items: center;
-bottom: 10%;
+h2 {
+  position: absolute;
+  align-items: center;
+  bottom: 10%;
 
-text-align: center;
-left: 0%;
-right: 0%;
-text-shadow:  3px 3px rgb(0, 0, 0);
-transition: 0.4s;
-font-family: 'aespa', sans-serif;
-font-weight: 600;
-                                                
+  text-align: center;
+  left: 0%;
+  right: 0%;
+  text-shadow: 3px 3px rgb(0, 0, 0);
+  transition: 0.4s;
+  font-family: "aespa", sans-serif;
+  font-weight: 600;
 }
 
-h2:hover{
-    text-shadow:  5px 3px 3px rgb(24, 1, 54);
+h2:hover {
+  text-shadow: 5px 3px 3px rgb(24, 1, 54);
 }
-
 
 .imgMembers {
-    display: flex;
-   background-color: #000000;
-    
-  color: white;
+  display: flex;
+  background-color: #000000;
 
+  color: white;
 }
 
-.imgMembers img{
+.imgMembers img {
+  display: inline-block;
 
-    display: inline-block;
-   
-	height: 100vh;
+  height: 100vh;
 
-    align-items: center;
-    justify-content: center;
-    
-
+  align-items: center;
+  justify-content: center;
 }
 
 /* KARINA */
-.imgMembers .kr{
-    position: relative;
-opacity: 0;
-     animation: animationKR 0s 1.8s both;
- }
-
-
-.textblock{
-position: relative;
-overflow: hidden;
+.imgMembers .kr {
+  position: relative;
+  opacity: 0;
+  animation: animationKR 0s 1.8s both;
 }
 
-.textblock::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgb(0, 0, 0);
-    transform: translateY(-100%);
-        
-        animation:enlargeBlockKR 0.5s  0.6 both, revelBlockKR 2.1s 1.1s both ;
-        
+.textblock {
+  position: relative;
+  overflow: hidden;
+}
+
+.textblock::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transform: translateY(-100%);
+
+  animation: enlargeBlockKR 0.5s 0.6 both, revelBlockKR 2.1s 1.1s both;
 }
 @keyframes enlargeBlockKR {
-    from{
-            height: 0%;
-    }
-    to{
-            height: -100%;
-            
-    }
+  from {
+    height: 0%;
+  }
+  to {
+    height: -100%;
+  }
 }
 
 @keyframes revelBlockKR {
-    from{
-        
-        transform: translateY(-100%);
-    }
-    to{
-        transform: translateY(100%);
-        
-      
-    }
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }
 
-@keyframes animationKR{
-    from {
-       
-       opacity: 0;
-    }
+@keyframes animationKR {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
-   
+  }
 }
-}
-
-
 
 /*GISELE*/
 
-.imgMembers  .gs{
-    position: relative;
-    opacity: 0;
-         animation: animationKR 0s 1.9s both;
+.imgMembers .gs {
+  position: relative;
+  opacity: 0;
+  animation: animationKR 0s 1.9s both;
 }
 
-.textblock2{
-    position: relative;
-    overflow: hidden;
-    }
-    
-    .textblock2::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0, 0, 0);
-        transform: translateY(-100%);
-            
-            animation:enlargeBlockKR 0.5s  0.6 both, revelBlockKR 2.5s 1.1s both;
-    }
+.textblock2 {
+  position: relative;
+  overflow: hidden;
+}
 
+.textblock2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transform: translateY(-100%);
 
-
-
-
+  animation: enlargeBlockKR 0.5s 0.6 both, revelBlockKR 2.5s 1.1s both;
+}
 
 /*WINTER*/
 
-.imgMembers .wt{
-    position: relative;
-    opacity: 0;
-         animation: animationKR 0s 2s both;
+.imgMembers .wt {
+  position: relative;
+  opacity: 0;
+  animation: animationKR 0s 2s both;
 }
 
+.textblock3 {
+  position: relative;
+  overflow: hidden;
+}
 
-.textblock3{
-    position: relative;
-    overflow: hidden;
-    }
-    
-    .textblock3::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0, 0, 0);
-        transform: translateY(-100%);
-            
-            animation:enlargeBlockKR 0.5s  0.6 both, revelBlockKR 2.9s 1.1s both;
-    }
+.textblock3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transform: translateY(-100%);
 
-
-
-
-
-
-
-
+  animation: enlargeBlockKR 0.5s 0.6 both, revelBlockKR 2.9s 1.1s both;
+}
 
 /*NINGNING*/
 
-.imgMembers .nn{
-    position: relative;
-    opacity: 0;
-         animation: animationKR 0s 2.1s both;
-    
-} 
+.imgMembers .nn {
+  position: relative;
+  opacity: 0;
+  animation: animationKR 0s 2.1s both;
+}
 
-.textblock4{
-    position: relative;
-    overflow: hidden;
-    }
-    
-    .textblock4::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgb(0, 0, 0);
-        transform: translateY(-100%);
-            
-            animation:enlargeBlockKR 0.5s  0.6 both, revelBlockKR 3.1s 1.1s both;
-    }
+.textblock4 {
+  position: relative;
+  overflow: hidden;
+}
 
-    
+.textblock4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transform: translateY(-100%);
 
-
-
-
-
-
-
-
+  animation: enlargeBlockKR 0.5s 0.6 both, revelBlockKR 3.1s 1.1s both;
+}
