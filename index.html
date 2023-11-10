@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -16,10 +19,12 @@
   <body>
     <div class="container">
       <div class="profile">
+        <a href="?pagina=home">
         <img
           src="/imgs/aespa-logo.jpg"
           alt="imagem logo do grupo de kpop AESPA"
         />
+        </a>
         <p>
           <a href="https://instagram.com/aespa_official">@aespa_official</a>
         </p>
@@ -29,13 +34,13 @@
         <form>
           <h2>Login</h2>
           <label for="Nome"></label>
-          <input type="text" placeholder="Nome" />
+          <input type="text" placeholder="Nome" name="nome" required/>
 
           <label for="Email"></label>
-          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Email" name="email" required/>
 
           <label for="Senha"></label>
-          <input type="password" placeholder="Senha" />
+          <input type="password" placeholder="Senha" name="senha" required/>
 
           <a href="MainPage.html" style="text-decoration: none"> <input type="button" class="button" value="Sign in"/></a>
         </form>
@@ -69,5 +74,36 @@
       </footer>
     </div>
   
+
+    <?php
+
+if (!isset($_GET['pagina'])) {
+    include("views/home.php");
+}
+else{
+   
+   $link = $_GET['pagina'];
+   switch($link){
+    case "downloads";
+    include("views/downloads.php");
+    break;
+    case "envio";
+    include("views/envio.php");
+    break;      
+    case "logar";
+    include("views/logar.php");
+    break; 
+    case "verificar":
+        include("views/verifica_login.php");
+        break;
+        case "home":
+            include("views/home.php");
+            break;
+
+    
+ }
+    
+} ?>
+
   </body>
 </html>
