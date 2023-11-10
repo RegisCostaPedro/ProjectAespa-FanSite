@@ -75,35 +75,9 @@
     </div>
   
 
-    <?php
-
-if (!isset($_GET['pagina'])) {
-    include("views/home.php");
-}
-else{
-   
-   $link = $_GET['pagina'];
-   switch($link){
-    case "downloads";
-    include("views/downloads.php");
-    break;
-    case "envio";
-    include("views/envio.php");
-    break;      
-    case "logar";
-    include("views/logar.php");
-    break; 
-    case "verificar":
-        include("views/verifica_login.php");
-        break;
-        case "home":
-            include("views/home.php");
-            break;
 
     
- }
-    
-} ?>
+
 
   </body>
 </html>
